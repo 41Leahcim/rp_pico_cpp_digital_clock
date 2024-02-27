@@ -7,4 +7,4 @@ I haven't measured yet, how long it could run on batteries or a powerbank.
 
 ## Wiring
 The Analog input must be connected to gpio 28. The HT16K33 must be connected to the default I2C pins (SDA to GPIO4, SCL to GPIO5).
-Both run on 3.3V so both can be fully powered by the 3.3V output pin of the Raspberry Pico.
+Both run on 3.3V so both can be fully powered by the 3V3 output pin of the Raspberry Pico.
