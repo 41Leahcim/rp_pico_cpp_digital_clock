@@ -17,7 +17,17 @@ public:
     /// @param index The index of the 7-segment displays (0 left - 3 right)
     /// @param digit The digit to display
     void display_digit(const uint8_t index, const uint8_t digit) const;
+
+    /// @brief Displays a digit with a dot
+    /// @param index The index of the 7-segment displays (0 left, - 3 right)
+    /// @param digit The digit ot display
     void display_digit_with_dot(const uint8_t index, const uint8_t digit) const;
+
+    /// @brief Displays the colon
     void display_colon() const;
+
+    /// @brief Changes the brightness of the display
+    /// @param value The brightness value (0 - 15 inclusive)
+    void set_brightness(uint8_t value) const;
 };
 

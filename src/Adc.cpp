@@ -17,9 +17,12 @@ uint16_t Adc::read() const{
     return adc_read();
 }
 
-uint64_t Adc::read_stable(const uint32_t measurements) const{
+uint64_t Adc::read_stable(const uint32_t measurements, const float clock_divider) const{
     // Select the adc input channel
     adc_select_input(input);
+    
+    // Select clock divider
+    adc_set_clkdiv(clock_divider);
 
     // Perform the requested number of measurements
     uint64_t total = 0;

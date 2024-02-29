@@ -16,6 +16,7 @@ public:
 
     /// @brief Performs multiple measurements to calculate a more stable value
     /// @param measurements the number of measurements to take
+    /// @param clock_divider slows down the adc, minimum is 96
     /// @return the average value measured
-    uint64_t read_stable(const uint32_t measurements) const;
+    uint64_t read_stable(const uint32_t measurements, const float clock_divider) const;
 };

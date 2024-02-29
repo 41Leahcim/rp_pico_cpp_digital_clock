@@ -7,3 +7,6 @@ I haven't measured yet, how long it could run on batteries or a powerbank.
 
 ## Wiring
 The Analog input must be connected to gpio 28, ADC_VREF, and ADC_GND. The HT16K33 must be connected to the default I2C pins (SDA to GPIO4, SCL to GPIO5), 3V3, and a GND of the Raspberry Pico.
+
+## Energy usage
+Can run for more than 1 day on a small powerbank.
