@@ -8,4 +8,4 @@ You can read how you can install this [here](https://datasheets.raspberrypi.com/
 The Analog input must be connected to gpio 28, ADC_VREF, and ADC_GND. The HT16K33 must be connected to the default I2C pins (SDA to GPIO4, SCL to GPIO5), 3V3, and a GND of the Raspberry Pico.
 
 ## Energy usage
-Can run for more than 1 day on a small powerbank.
+Can run for more than 2 days on a small powerbank.
