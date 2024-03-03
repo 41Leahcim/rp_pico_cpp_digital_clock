@@ -68,3 +68,11 @@ void Ht16k33::display_colon() const{
     const uint8_t buffer[2] = {4, 255};
     i2c.send_bytes(address, buffer, 2);
 }
+
+void Ht16k33::set_brightness(uint8_t value) const{
+    // Make sure the value is less than 15
+    value &= 15;
+
+    // Set the brightness
+    i2c.send_byte(address,0xe0 | value);
+}
